@@ -5,35 +5,46 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CARIDAD GESTION</title>
 </head>
-<body><h1>Gestion de tableau</h1>
-<form id="form-tableau"></form>
-<label for="nom">Nom</label>
-<input type="text" id="" id="nom">
-<label for="prenom">Prénom</label>
-<input type="text" name="prenom" id="prenom">
-<label for="Adresse">Adresse</label>
-<input type="text" name="adresse" id="adresse">
-<label for="Numéro">Numero</label>
-<input type="text" name="numero" id="numero">
-<label for="metier">Motif</label>
-<input type="text" name="metier" id="metier">
-<button id="bnt-ajouter">Ajouter</button>
+<body>
+
+<h1>Gestion de tableau</h1>
+
+<form id="form-tableau">
+    <label for="nom">Nom</label>
+    <input type="text" id="nom" name="nom" required>
+
+    <label for="prenom">Prénom</label>
+    <input type="text" id="prenom" name="prenom" required>
+
+    <label for="adresse">Adresse</label>
+    <input type="text" id="adresse" name="adresse" required>
+
+    <label for="numero">Numéro</label>
+    <input type="text" id="numero" name="numero" required>
+
+    <label for="metier">Motif</label>
+    <input type="text" id="metier" name="metier" required>
+
+    <button type="submit" id="btn-ajouter">Ajouter</button>
 </form>
-<table id="tableau">
-    
+
+<table id="tableau" border="1">
+    <thead>
         <tr>
-            <th>Noms</th>
-            <th>Prénoms</th>
+            <th>Nom</th>
+            <th>Prénom</th>
             <th>Adresse</th>
             <th>Numéro tel</th>
             <th>Motif</th>
-            <th>action</th>
+            <th>Actions</th>
         </tr>
-        </thead>
-        <body id="liste-tableau">  
-        </body>
-    </table>
-    <script src="script.js"> </script>
-    
+    </thead>
+    <tbody id="liste-tableau">
+        <!-- Les lignes seront ajoutées ici en JavaScript -->
+    </tbody>
+</table>
+
+<script src="script.js"></script>
+
 </body>
 </html>
